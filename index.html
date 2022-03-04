@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon"
+        href="https://cdn-icons-png.flaticon.com/512/3163/3163478.png">
+    <title>Website Movies</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+
+<body>
+    <nav>
+        <div>
+            <a href="#" class="nav__link" id="nav__link">
+                <h1><img src="https://cdn-icons-png.flaticon.com/512/3163/3163478.png" style="width: 4%;">  Website Movies</>
+            </a>
+        </div>
+        <div>
+            <form action="" id="form">
+                <input type="text" name="search" id="search" class="search" placeholder="search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <p>Welcome To Our Website Movies</p>
+    </div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content">
+        </div>
+
+    </div>
+    <main id="main">
+        <!--  -->
+    </main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+    </div>
+    <footer id="footer">
+        <p>Mochammad Alif Aditya Putra Bhakti - </p>
+    </footer>
+</body>
+<script>
+    const d = new Date()
+    let year = d.getFullYear();
+    document.getElementById("footer").innerHTML = `
+    <p>10121083 - Mochammad Alif Aditya Putra Bhakti - ${year}</p>
+    `
+</script>
+<script src="./js/api-key.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
